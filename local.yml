@@ -34,17 +34,17 @@ services:
     env_file:
       - ./.envs/.local/.postgres
 
-  docs:
-    image: cara_libro_local_docs
-    container_name: docs
-    build:
-      context: .
-      dockerfile: ./compose/local/docs/Dockerfile
-    env_file:
-      - ./.envs/.local/.django
-    volumes:
-      - ./docs:/docs
-      - ./config:/app/config
-      - ./cara_libro:/app/cara_libro
-    ports:
-      - "7000:7000"
+#  docs:
+#    image: cara_libro_local_docs
+#    container_name: docs
+#    build:
+#      context: .
+#      dockerfile: ./compose/local/docs/Dockerfile
+#    env_file:
+#      - ./.envs/.local/.django
+#    volumes:
+#      - ./docs:/docs
+#      - ./config:/app/config
+#      - ./cara_libro:/app/cara_libro
+#    ports:
+#      - "7000:7000"
