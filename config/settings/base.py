@@ -64,6 +64,7 @@ DJANGO_APPS = [
     "django.forms",
 ]
 THIRD_PARTY_APPS = [
+    "ckeditor",
     "crispy_forms",
     "allauth",
     "allauth.account",
@@ -72,6 +73,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "cara_libro.users.apps.UsersConfig",
+    "pages.apps.PagesConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
